@@ -21,6 +21,7 @@
 		14EB9FEE1DDD3D0F00CC0D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14EB9FEC1DDD3D0F00CC0D29 /* LaunchScreen.storyboard */; };
 		14EB9FF91DDD3D0F00CC0D29 /* Giterest_FullTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EB9FF81DDD3D0F00CC0D29 /* Giterest_FullTests.swift */; };
 		14EBA0031DDD3E3200CC0D29 /* GithubOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA0021DDD3E3200CC0D29 /* GithubOAuthManager.swift */; };
+		CC5F1E281DDE5C8F00D0E053 /* GithubOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5F1E271DDE5C8F00D0E053 /* GithubOAuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		14EB9FF81DDD3D0F00CC0D29 /* Giterest_FullTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giterest_FullTests.swift; sourceTree = "<group>"; };
 		14EB9FFA1DDD3D0F00CC0D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14EBA0021DDD3E3200CC0D29 /* GithubOAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubOAuthManager.swift; path = Managers/GithubOAuthManager.swift; sourceTree = "<group>"; };
+		CC5F1E271DDE5C8F00D0E053 /* GithubOAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubOAuthManager.swift; path = ../GithubOAuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,12 +122,9 @@
 		14EB9FBC1DDD3CEA00CC0D29 /* Giterest */ = {
 			isa = PBXGroup;
 			children = (
+				CC5F1E291DDE5CE200D0E053 /* Supportu */,
+				CC5F1E271DDE5C8F00D0E053 /* GithubOAuthManager.swift */,
 				14EB9FBD1DDD3CEA00CC0D29 /* AppDelegate.swift */,
-				14EB9FBF1DDD3CEA00CC0D29 /* ViewController.swift */,
-				14EB9FC11DDD3CEA00CC0D29 /* Main.storyboard */,
-				14EB9FC41DDD3CEA00CC0D29 /* Assets.xcassets */,
-				14EB9FC61DDD3CEA00CC0D29 /* LaunchScreen.storyboard */,
-				14EB9FC91DDD3CEA00CC0D29 /* Info.plist */,
 				14EB9FD11DDD3CEA00CC0D29 /* GiterestTests */,
 			);
 			path = Giterest;
@@ -171,6 +170,18 @@
 				14EB9FEF1DDD3D0F00CC0D29 /* Info.plist */,
 			);
 			name = "Supporting FIles";
+			sourceTree = "<group>";
+		};
+		CC5F1E291DDE5CE200D0E053 /* Supportu */ = {
+			isa = PBXGroup;
+			children = (
+				14EB9FBF1DDD3CEA00CC0D29 /* ViewController.swift */,
+				14EB9FC11DDD3CEA00CC0D29 /* Main.storyboard */,
+				14EB9FC41DDD3CEA00CC0D29 /* Assets.xcassets */,
+				14EB9FC61DDD3CEA00CC0D29 /* LaunchScreen.storyboard */,
+				14EB9FC91DDD3CEA00CC0D29 /* Info.plist */,
+			);
+			name = Supportu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 			files = (
 				14EB9FC01DDD3CEA00CC0D29 /* ViewController.swift in Sources */,
 				14EB9FBE1DDD3CEA00CC0D29 /* AppDelegate.swift in Sources */,
+				CC5F1E281DDE5C8F00D0E053 /* GithubOAuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -505,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
