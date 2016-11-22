@@ -28,7 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+        if let sendingApp = options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String {
+            
+            if sendingApp == "Safari.app" {
+                //add code for authmanager
+            }
+        }
         return true
     }
 
